@@ -63,3 +63,47 @@ body #progress {
 }
 
 /*# sourceMappingURL=style.css.map */
+footer{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "projet"
+  "nom";
+  
+}
+/**/inspiration projet a gauche/**/
+#projet{
+  display: flex;
+  text-align: left;
+  grid-area: projet;
+  color:blueviolet;
+}
+#projet:hover{
+  color: #ffa502;
+
+}
+
+/**/mon nom au centre/**/
+#nom{
+  
+  text-align:center;
+ justify-content: space-between;
+ color: chartreuse;
+}
+#nom:hover{
+  color: aqua;
+}
+/** image a droite **/
+img{
+  width: 150px;
+  justify-content: space-between;
+  background-color:cadetblue;
+ border-radius:80%;
+}
+
+/** jai augmentéla taille du bouton/**/
+ i{
+font-size: 300%;
+  color:brown;
+ }
+

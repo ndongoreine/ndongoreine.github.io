@@ -8,11 +8,20 @@ class Question {
       return this.answer === choice;
     }
   }
+  // 
   let questions = [
     new Question("Quelle méthode Javascript permet de filtrer les éléments d'un tableau", ["indexOf()", "map()", "filter()", "reduce()"], "filter()"),
     new Question("Quelle méthode Javascript permet de vérifier si un élément figure dans un tableau", ["isNaN()","includes()", "findIndex()", "isOdd()"], "includes()"),
     new Question("Quelle méthode transforme du JSON en un objet Javascript ?", ["JSON.parse()","JSON.stringify()", "JSON.object()", "JSON.toJS"], "JSON.parse()"),
-    new Question("Quel objet Javascript permet d'arrondir à l'entier le plus proche", ["Math.ceil()","Math.floor()", "Math.round()", "Math.random()"], "Math.round()")
+    new Question("Quel objet Javascript permet d'arrondir à l'entier le plus proche", ["Math.ceil()","Math.floor()", "Math.round()", "Math.random()"], "Math.round()"),
+    // tableau de mot
+      new Question("Quelle est la capitale de la France ?", ["londre()","quecbec()", "usa()", "paris()"], "paris()"),
+      new Question("Quelle est ta couleur preferé?", ["vert()","jaune()", "rouge()", "orange()"], "rouge()"),
+      new Question("Quelle est la couleur du ciel lorsqu'il fait beau?", ["le blanc()","bleu()", "gris()", "marron()"], "bleu()"),
+      new Question("Combien de planètes dans notre système solaire ??", ["9()","10()", "8()", "20()"], "8()"),
+      new Question("Combien de planètes dans notre système solaire ??", ["9()","10()", "8()", "20()"], "8()"),
+    
+
   ];
   
   class Quiz {
@@ -83,3 +92,15 @@ class Question {
   // Create Quiz
   let quiz = new Quiz(questions);
   quizApp();
+  //ajout du bouton afin de recommmencer a chaque fois
+let icone=document.querySelector('.icone-reveal')
+icone.addEventListener('click',bouton);
+   function bouton(){
+    location.reload();
+
+  }
+
+
+  
+ 
+  
